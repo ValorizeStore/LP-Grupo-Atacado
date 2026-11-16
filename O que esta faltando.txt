@@ -1,4 +1,4 @@
 - Logo no cabeçalho e aba (FEITO)
 - Add links nos botões (FEITO)
-- Mudar imagens Template (FEITO)
+- Mudar imagens Template
 - Add link do catalogo no botão da loja ou remover
