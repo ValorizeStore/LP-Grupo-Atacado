@@ -1,0 +1,3 @@
+- Logo no cabeçalho e aba
+- Add links nos botões
+- Mudar imagens Template

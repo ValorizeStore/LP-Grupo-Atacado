@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo VIP de Kits e Lotes | Preço de Atacado</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#53329c',
+                            purpleDark: '#231347',
+                            purpleDeep: '#120929',
+                            avocado: '#84cc16',
+                            avocadoLight: '#a3e635',
+                            avocadoDark: '#65a30d',
+                            dark: '#120929',
+                            cardBg: '#1c103b'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-soft': 'bounceSoft 2s infinite',
+                    },
+                    keyframes: {
+                        bounceSoft: {
+                            '0%, 100%': { transform: 'translateY(-3%)' },
+                            '50%': { transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #120929;
+            background-image: radial-gradient(circle at top center, #2a1758 0%, #120929 70%);
+            color: #f8fafc;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(132, 204, 22, 0.4);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 38px rgba(163, 230, 53, 0.65);
+        }
+        /* Custom modal animation */
+        .modal-enter {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        .modal-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 200ms ease-out, transform 200ms ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-[#84cc16] selection:text-[#120929]">
+
+    <!-- HEADER DE NAVEGAÇÃO COM A LOGO DA EMPRESA -->
+    <nav class="w-full bg-[#120929]/90 border-b border-[#53329c]/40 backdrop-blur-md sticky top-0 z-40 px-4 py-3">
+        <div class="max-w-md md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between">
+            <!-- Logo Valorize Store no Canto Superior Esquerdo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl overflow-hidden border-2 border-[#84cc16]/70 group-hover:border-[#a3e635] transition-all shadow-lg shadow-[#53329c]/40 bg-[#53329c] shrink-0">
+                    <img src="Logo Valorize.jpeg" 
+                         alt="Valorize Store Logo" 
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null; this.src='Logo - Valorize Store_2.png';">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-black text-base sm:text-lg tracking-wider text-white group-hover:text-[#a3e635] transition-colors uppercase leading-none">VALORIZE</span>
+                    <span class="text-[10px] text-purple-300 tracking-widest font-semibold uppercase">STORE &bull; ATACADO</span>
+                </div>
+            </a>
+
+            <!-- Badge de Atendimento/Status no Canto Direito -->
+            <div class="hidden sm:flex items-center gap-2 bg-[#231347] border border-[#84cc16]/40 px-3 py-1.5 rounded-full text-xs text-[#bef264]">
+                <span class="w-2 h-2 rounded-full bg-[#a3e635] animate-pulse"></span>
+                <span class="font-medium">Atendimento On-line</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-[#53329c] via-[#6b42c4] to-[#53329c] border-b border-[#84cc16]/30 text-white text-xs sm:text-sm font-semibold py-2 px-4 text-center tracking-wide shadow-md flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#a3e635] animate-ping"></span>
+        <span>🔥 GRUPO EXCLUSIVO: Lotes e Kits com <strong class="text-[#bef264]">Preço Direto da Fábrica</strong></span>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-md md:max-w-3xl lg:max-w-4xl mx-auto px-4 py-6 sm:py-10 flex-grow w-full">
+
+        <!-- HEADER / BRANDING -->
+        <header class="text-center mb-6">
+            <div class="inline-flex items-center gap-2 bg-[#231347]/90 border border-[#53329c]/60 px-3.5 py-1.5 rounded-full text-xs text-purple-200 mb-3 shadow-inner">
+                <i class="fa-solid fa-shield-halved text-[#a3e635]"></i>
+                <span>Atacado Direto da Fábrica &bull; Valorize Store</span>
+            </div>
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-3">
+                Kits e Lotes de <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#a3e635] to-[#84cc16]">Peças em Oferta</span> Direto no Seu WhatsApp
+            </h1>
+            <p class="text-sm sm:text-base text-purple-100/80 max-w-2xl mx-auto leading-relaxed">
+                Postamos diariamente novos lotes, liquidações e promoções exclusivas de calças, jaquetas e bermudas Jeans com preço de atacado para revenda rápida!
+            </p>
+        </header>
+
+        <!-- HERO CAROUSEL BANNER (4 BANNERS: 2 MASCULINOS, 2 FEMININOS) -->
+        <div id="hero-carousel" class="relative rounded-2xl overflow-hidden mb-6 border border-[#53329c]/60 shadow-2xl shadow-[#120929] group select-none">
+            <!-- Carousel Track -->
+            <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out w-full">
+
+                <!-- SLIDE 1: JEANS MASCULINO -->
+                <div class="min-w-full relative shrink-0">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Lote Jeans Masculino" 
+                         class="w-full h-52 sm:h-72 object-cover" 
+                         onerror="this.src='https://placehold.co/800x400/231347/ffffff?text=Lote+Jeans+Masculino'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#120929] via-[#120929]/40 to-transparent flex items-end p-4 sm:p-6">
+                        <div class="flex items-center justify-between w-full gap-2">
+                            <div>
+                                <span class="bg-[#84cc16] text-[#120929] text-[10px] sm:text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Jeans Masculino</span>
+                                <h3 class="text-white font-extrabold text-base sm:text-xl mt-1">Lote Calças & Bermudas Jeans Premium</h3>
+                            </div>
+                            <span class="bg-[#231347]/90 border border-[#53329c] text-[#bef264] font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg shrink-0">
+                                Direto de Fábrica 🔥
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: JEANS FEMININO -->
+                <div class="min-w-full relative shrink-0">
+                    <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Lote Jeans Feminino" 
+                         class="w-full h-52 sm:h-72 object-cover" 
+                         onerror="this.src='https://placehold.co/800x400/231347/ffffff?text=Lote+Jeans+Feminino'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#120929] via-[#120929]/40 to-transparent flex items-end p-4 sm:p-6">
+                        <div class="flex items-center justify-between w-full gap-2">
+                            <div>
+                                <span class="bg-[#53329c] text-white border border-purple-400/40 text-[10px] sm:text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Jeans Feminino</span>
+                                <h3 class="text-white font-extrabold text-base sm:text-xl mt-1">Kit Shorts, Flares & Jaquetas Cropped</h3>
+                            </div>
+                            <span class="bg-[#231347]/90 border border-[#53329c] text-[#bef264] font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg shrink-0">
+                                Lote Promocional ✨
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: VARIEDADE MASCULINA -->
+                <div class="min-w-full relative shrink-0">
+                    <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Variedade Moda Masculina" 
+                         class="w-full h-52 sm:h-72 object-cover" 
+                         onerror="this.src='https://placehold.co/800x400/231347/ffffff?text=Variedade+Masculina'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#120929] via-[#120929]/40 to-transparent flex items-end p-4 sm:p-6">
+                        <div class="flex items-center justify-between w-full gap-2">
+                            <div>
+                                <span class="bg-[#84cc16] text-[#120929] text-[10px] sm:text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Variedade Masculina</span>
+                                <h3 class="text-white font-extrabold text-base sm:text-xl mt-1">Camisetas, Polos & Moda Casual</h3>
+                            </div>
+                            <span class="bg-[#231347]/90 border border-[#53329c] text-[#bef264] font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg shrink-0">
+                                Alto Giro ⚡
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: VARIEDADE FEMININA -->
+                <div class="min-w-full relative shrink-0">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Variedade Moda Feminina" 
+                         class="w-full h-52 sm:h-72 object-cover" 
+                         onerror="this.src='https://placehold.co/800x400/231347/ffffff?text=Variedade+Feminina'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#120929] via-[#120929]/40 to-transparent flex items-end p-4 sm:p-6">
+                        <div class="flex items-center justify-between w-full gap-2">
+                            <div>
+                                <span class="bg-[#53329c] text-white border border-purple-400/40 text-[10px] sm:text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Variedade Feminina</span>
+                                <h3 class="text-white font-extrabold text-base sm:text-xl mt-1">Vestidos, T-Shirts & Peças Tendência</h3>
+                            </div>
+                            <span class="bg-[#231347]/90 border border-[#53329c] text-[#bef264] font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg shrink-0">
+                                Grade Variada 🛍️
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button onclick="prevSlide()" aria-label="Slide Anterior" class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#120929]/75 hover:bg-[#53329c] text-white p-2 sm:p-2.5 rounded-full border border-purple-400/40 backdrop-blur-sm opacity-80 sm:opacity-0 sm:group-hover:opacity-100 transition-all">
+                <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
+            </button>
+            <button onclick="nextSlide()" aria-label="Próximo Slide" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#120929]/75 hover:bg-[#53329c] text-white p-2 sm:p-2.5 rounded-full border border-purple-400/40 backdrop-blur-sm opacity-80 sm:opacity-0 sm:group-hover:opacity-100 transition-all">
+                <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
+            </button>
+
+            <!-- Navigation Indicators (Dots) -->
+            <div class="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10">
+                <button onclick="goToSlide(0)" class="carousel-dot w-2.5 h-2.5 rounded-full bg-white transition-all shadow" aria-label="Slide 1"></button>
+                <button onclick="goToSlide(1)" class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all shadow" aria-label="Slide 2"></button>
+                <button onclick="goToSlide(2)" class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all shadow" aria-label="Slide 3"></button>
+                <button onclick="goToSlide(3)" class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all shadow" aria-label="Slide 4"></button>
+            </div>
+        </div>
+
+        <!-- QUIZ / SEGMENTATION BLOCK (Inspiração da Referência) -->
+        <section id="quiz-container" class="bg-[#1c103b] border border-[#53329c]/60 rounded-2xl p-5 sm:p-7 shadow-2xl mb-8 relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-36 h-36 bg-[#84cc16]/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="absolute -bottom-12 -left-12 w-36 h-36 bg-[#53329c]/30 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="text-center mb-5 relative z-10">
+                <span class="text-xs uppercase tracking-widest font-bold text-[#bef264] bg-[#53329c]/60 border border-[#84cc16]/40 px-3 py-1 rounded-md">Passo 1 de 2</span>
+                <h2 class="text-lg sm:text-xl font-bold text-white mt-2">Selecione seu perfil para ver as ofertas:</h2>
+                <p class="text-xs sm:text-sm text-purple-200/75">Clique em um dos botões abaixo para continuar</p>
+            </div>
+
+            <!-- OPTIONS WITH CLEAR BUTTON DESIGN -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-5 relative z-10">
+                <!-- Option 1: Lojista -->
+                <button onclick="selectProfile('lojista')" id="btn-lojista" class="profile-option group relative border-2 border-[#84cc16]/80 hover:border-[#a3e635] bg-gradient-to-r from-[#281754] to-[#341e6b] hover:from-[#321d69] hover:to-[#3f2582] p-4 rounded-xl text-left transition-all duration-200 flex items-center justify-between gap-3 focus:outline-none shadow-md hover:shadow-[#84cc16]/20 active:scale-[0.98]">
+                    <div class="flex items-center gap-3">
+                        <div class="p-3 bg-[#84cc16]/20 text-[#a3e635] rounded-xl group-hover:bg-[#84cc16] group-hover:text-[#120929] transition-colors shrink-0">
+                            <i class="fa-solid fa-store text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-bold text-white text-sm sm:text-base group-hover:text-[#bef264] transition-colors">Sou Lojista / Revendedor(a)</h3>
+                            </div>
+                            <p class="text-xs text-purple-200/80 mt-0.5">Comprar lotes e kits para revender</p>
+                        </div>
+                    </div>
+                    <div class="shrink-0 flex flex-col items-end gap-1">
+                        <span class="bg-[#84cc16] text-[#120929] text-[10px] font-black uppercase px-2 py-1 rounded-md shadow group-hover:bg-[#a3e635]">Clique aqui</span>
+                        <i class="fa-solid fa-chevron-right text-[#a3e635] text-xs"></i>
+                    </div>
+                </button>
+
+                <!-- Option 2: Consumidor -->
+                <button onclick="selectProfile('consumidor')" id="btn-consumidor" class="profile-option group relative border-2 border-[#7c52d6] hover:border-purple-300 bg-gradient-to-r from-[#281754] to-[#341e6b] hover:from-[#321d69] hover:to-[#3f2582] p-4 rounded-xl text-left transition-all duration-200 flex items-center justify-between gap-3 focus:outline-none shadow-md hover:shadow-[#53329c]/40 active:scale-[0.98]">
+                    <div class="flex items-center gap-3">
+                        <div class="p-3 bg-[#53329c]/60 text-purple-200 rounded-xl group-hover:bg-purple-300 group-hover:text-[#120929] transition-colors shrink-0">
+                            <i class="fa-solid fa-user-tag text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-bold text-white text-sm sm:text-base group-hover:text-purple-200 transition-colors">Consumidor Final</h3>
+                            </div>
+                            <p class="text-xs text-purple-200/80 mt-0.5">Kits e peças para uso próprio</p>
+                        </div>
+                    </div>
+                    <div class="shrink-0 flex flex-col items-end gap-1">
+                        <span class="bg-[#53329c] text-white border border-purple-300/40 text-[10px] font-black uppercase px-2 py-1 rounded-md shadow group-hover:bg-purple-500">Clique aqui</span>
+                        <i class="fa-solid fa-chevron-right text-purple-300 text-xs"></i>
+                    </div>
+                </button>
+            </div>
+
+            <!-- CTA SECTION (DISPLAYS DIRECTLY OR DYNAMICALLY) -->
+            <div id="cta-block" class="space-y-3 relative z-10">
+                <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" onclick="trackConversion('CTA_Main')" class="w-full bg-gradient-to-r from-[#84cc16] to-[#a3e635] hover:from-[#a3e635] hover:to-[#bef264] text-[#120929] font-black text-base sm:text-lg py-4 px-6 rounded-xl shadow-lg glow-effect transition-all transform active:scale-95 flex items-center justify-center gap-3 text-center uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Entrar no Grupo VIP Agora</span>
+                </a>
+                <p class="text-center text-xs text-purple-200/80 flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-lock text-[#a3e635]"></i> Grupo fechado. Apenas administradores enviam mensagens.
+                </p>
+            </div>
+        </section>
+
+        <!-- URGENCY & STATUS BANNER -->
+        <div class="bg-[#53329c]/30 border border-[#84cc16]/40 rounded-xl p-3.5 mb-8 flex items-center justify-between gap-3 text-xs sm:text-sm">
+            <div class="flex items-center gap-2.5 text-[#bef264]">
+                <i class="fa-solid fa-triangle-exclamation text-base shrink-0 animate-pulse text-[#a3e635]"></i>
+                <span><strong class="text-white">Estoque Limitado:</strong> Lotes com alta rotatividade. Vagas no grupo prestes a esgotar.</span>
+            </div>
+            <span class="hidden sm:inline-block bg-[#84cc16] text-[#120929] font-extrabold px-2.5 py-1 rounded-md text-xs shrink-0">Últimas vagas</span>
+        </div>
+
+        <!-- BENEFITS GRID -->
+        <section class="mb-10">
+            <h2 class="text-center text-xl font-bold text-white mb-6">Por que entrar no nosso <span class="text-[#a3e635]">Grupo VIP?</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="bg-[#1c103b]/80 border border-[#53329c]/50 hover:border-[#84cc16]/50 transition-colors p-4 rounded-xl flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-md bg-[#84cc16]/20 text-[#a3e635] flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Novidades Diárias</h4>
+                        <p class="text-xs text-purple-200/75 mt-1">Kits e lotes novos postados frequentemente com fotos e especificações.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c103b]/80 border border-[#53329c]/50 hover:border-[#84cc16]/50 transition-colors p-4 rounded-xl flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-md bg-[#84cc16]/20 text-[#a3e635] flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Preços Exclusivos</h4>
+                        <p class="text-xs text-purple-200/75 mt-1">Condições especiais e descontos válidos unicamente para membros do grupo.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c103b]/80 border border-[#53329c]/50 hover:border-[#84cc16]/50 transition-colors p-4 rounded-xl flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-md bg-[#84cc16]/20 text-[#a3e635] flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Acesso Antecipado</h4>
+                        <p class="text-xs text-purple-200/75 mt-1">Veja os lotes antes de irem para os outros canais e garanta as melhores peças.</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c103b]/80 border border-[#53329c]/50 hover:border-[#84cc16]/50 transition-colors p-4 rounded-xl flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-md bg-[#84cc16]/20 text-[#a3e635] flex items-center justify-center shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Atendimento Direto</h4>
+                        <p class="text-xs text-purple-200/75 mt-1">Sem intermediários ou burocracia. Gostou do lote? Chamou, fechou!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VISUAL PROOF / PREVIEW OF LOTS -->
+        <section class="mb-10 bg-[#1c103b]/60 border border-[#53329c]/50 rounded-2xl p-5">
+            <div class="text-center mb-5">
+                <h3 class="text-lg font-bold text-white">Exemplos de Lotes Divulgados no Grupo</h3>
+                <p class="text-xs text-purple-200/75">Fotos reais de ofertas enviadas semanalmente</p>
+            </div>
+
+            <!-- Mock Gallery -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="bg-[#231347] rounded-lg overflow-hidden border border-[#53329c]/50 group">
+                    <div class="relative h-32 sm:h-40 bg-[#120929] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80" alt="Lote Camisetas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/231347/ffffff?text=Lote+Camisetas'">
+                        <span class="absolute top-2 left-2 bg-[#53329c] text-white border border-purple-300/40 font-extrabold text-[10px] px-2 py-0.5 rounded">ESGOTADO</span>
+                    </div>
+                    <div class="p-2.5">
+                        <h4 class="font-bold text-xs text-white">Lote Camisetas Básicas</h4>
+                        <p class="text-[11px] text-[#a3e635] font-semibold mt-0.5">Grade Fechada (12 pçs)</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#231347] rounded-lg overflow-hidden border border-[#53329c]/50 group">
+                    <div class="relative h-32 sm:h-40 bg-[#120929] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Lote Calçados/Kits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/231347/ffffff?text=Kit+Promocional'">
+                        <span class="absolute top-2 left-2 bg-[#84cc16] text-[#120929] font-extrabold text-[10px] px-2 py-0.5 rounded">HOJE</span>
+                    </div>
+                    <div class="p-2.5">
+                        <h4 class="font-bold text-xs text-white">Kit Linha Premium</h4>
+                        <p class="text-[11px] text-[#a3e635] font-semibold mt-0.5">Preço Especial Atacado</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#231347] rounded-lg overflow-hidden border border-[#53329c]/50 col-span-2 sm:col-span-1 group">
+                    <div class="relative h-32 sm:h-40 bg-[#120929] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80" alt="Lote Jaquetas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/231347/ffffff?text=Lote+Inverno'">
+                        <span class="absolute top-2 left-2 bg-[#84cc16] text-[#120929] font-extrabold text-[10px] px-2 py-0.5 rounded">NOVO</span>
+                    </div>
+                    <div class="p-2.5">
+                        <h4 class="font-bold text-xs text-white">Lote Casacos & Jaquetas</h4>
+                        <p class="text-[11px] text-[#a3e635] font-semibold mt-0.5">Pronta-Entrega</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS (3 SIMPLE STEPS) -->
+        <section class="mb-10 text-center">
+            <h3 class="text-lg font-bold text-white mb-6">Como funciona em <span class="text-[#a3e635]">3 passos fáceis:</span></h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <div class="bg-[#1c103b] border border-[#53329c]/50 p-4 rounded-xl relative">
+                    <div class="w-8 h-8 bg-[#84cc16]/20 text-[#a3e635] font-extrabold rounded-full flex items-center justify-center mx-auto mb-3 border border-[#84cc16]/50">1</div>
+                    <h4 class="font-bold text-white text-sm">Clique no Botão</h4>
+                    <p class="text-xs text-purple-200/75 mt-1">Acesse nosso link oficial seguro para o WhatsApp.</p>
+                </div>
+
+                <div class="bg-[#1c103b] border border-[#53329c]/50 p-4 rounded-xl relative">
+                    <div class="w-8 h-8 bg-[#84cc16]/20 text-[#a3e635] font-extrabold rounded-full flex items-center justify-center mx-auto mb-3 border border-[#84cc16]/50">2</div>
+                    <h4 class="font-bold text-white text-sm">Entre no Grupo VIP</h4>
+                    <p class="text-xs text-purple-200/75 mt-1">Fique silenciosamente no grupo aguardando os lotes do dia.</p>
+                </div>
+
+                <div class="bg-[#1c103b] border border-[#53329c]/50 p-4 rounded-xl relative">
+                    <div class="w-8 h-8 bg-[#84cc16]/20 text-[#a3e635] font-extrabold rounded-full flex items-center justify-center mx-auto mb-3 border border-[#84cc16]/50">3</div>
+                    <h4 class="font-bold text-white text-sm">Escolha & Chame no Privado</h4>
+                    <p class="text-xs text-purple-200/75 mt-1">Gostou da oferta? Fale direto com nossa equipe para fechar.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section class="bg-gradient-to-b from-[#231347] to-[#120929] border border-[#53329c] rounded-2xl p-6 text-center mb-6 shadow-2xl relative">
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-2">Pronto para garantir os melhores preços?</h3>
+            <p class="text-xs sm:text-sm text-purple-200/80 mb-6 max-w-lg mx-auto">
+                Não perca o próximo lote. O grupo é 100% gratuito e você pode sair quando quiser.
+            </p>
+
+            <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" onclick="trackConversion('CTA_Bottom')" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#84cc16] to-[#a3e635] hover:from-[#a3e635] hover:to-[#bef264] text-[#120929] font-black text-base sm:text-lg py-4 px-8 rounded-xl shadow-lg glow-effect transition-all transform active:scale-95 uppercase tracking-wider">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Quero Entrar no Grupo VIP Agora</span>
+            </a>
+
+            <div class="mt-4 flex items-center justify-center gap-4 text-xs text-purple-200/80">
+                <span><i class="fa-solid fa-users text-[#a3e635] mr-1"></i> +1.200 Lojistas</span>
+                <span><i class="fa-solid fa-check text-[#a3e635] mr-1"></i> Sem Spam</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#53329c]/40 bg-[#0d061f] py-6 px-4 text-center text-xs text-purple-300/60">
+        <div class="max-w-md md:max-w-3xl mx-auto space-y-2">
+            <div class="flex items-center justify-center gap-2 mb-2">
+                <img src="Logo Valorize.jpeg" alt="Valorize Store" class="w-7 h-7 rounded-lg border border-[#84cc16]/50" onerror="this.onerror=null; this.src='Logo - Valorize Store_2.png';">
+                <p class="font-semibold text-purple-200">Valorize Store - Atacado & Varejo</p>
+            </div>
+            <p>Mais de 25 anos de história no mercado de moda</p>
+            <p class="text-[10px] text-purple-300/40">CNPJ: 00.000.000/0001-00 &bull; Todos os direitos reservados.</p>
+            <p class="text-[10px] text-purple-300/40 pt-2">Este site não faz parte do Facebook ou Meta Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma forma.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CONDIÇÕES ATACADO (ACIONADO AO SELECIONAR "LOJISTA") -->
+    <div id="atacado-modal" class="fixed inset-0 bg-[#0d061f]/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-[#1c103b] border border-[#53329c] rounded-2xl max-w-md w-full p-6 shadow-2xl relative transform transition-all">
+            <button onclick="closeModal('atacado-modal')" class="absolute top-4 right-4 text-purple-300 hover:text-white text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-4">
+                <div class="w-12 h-12 bg-[#84cc16]/20 text-[#a3e635] rounded-full flex items-center justify-center mx-auto mb-2 text-xl border border-[#84cc16]/40">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Condições de Atacado</h3>
+                <p class="text-xs text-purple-200/75">Para garantir o padrão de preços de fábrica:</p>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-purple-100 mb-6">
+                <li class="flex items-start gap-2.5 bg-[#231347] p-2.5 rounded-lg border border-[#53329c]/60">
+                    <i class="fa-solid fa-circle-check text-[#a3e635] text-sm mt-0.5 shrink-0"></i>
+                    <span><strong>Foco em Revendedores:</strong> Lotes e grades fechadas.</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-[#231347] p-2.5 rounded-lg border border-[#53329c]/60">
+                    <i class="fa-solid fa-circle-check text-[#a3e635] text-sm mt-0.5 shrink-0"></i>
+                    <span><strong>Pedido Mínimo:</strong> A partir de 12 peças na grade.</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-[#231347] p-2.5 rounded-lg border border-[#53329c]/60">
+                    <i class="fa-solid fa-circle-check text-[#a3e635] text-sm mt-0.5 shrink-0"></i>
+                    <span><strong>Pagamento Facilitado:</strong> Pix com desconto à vista.</span>
+                </li>
+            </ul>
+
+            <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" onclick="trackConversion('CTA_Modal_Lojista')" class="w-full bg-gradient-to-r from-[#84cc16] to-[#a3e635] hover:from-[#a3e635] hover:to-[#bef264] text-[#120929] font-black text-sm py-3.5 px-4 rounded-xl shadow-lg glow-effect flex items-center justify-center gap-2 text-center uppercase tracking-wider">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Entrar no Grupo Atacado</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- MODAL DE VAREJO (ACIONADO AO SELECIONAR "CONSUMIDOR") -->
+    <div id="varejo-modal" class="fixed inset-0 bg-[#0d061f]/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-[#1c103b] border border-[#53329c] rounded-2xl max-w-md w-full p-6 shadow-2xl relative transform transition-all">
+            <button onclick="closeModal('varejo-modal')" class="absolute top-4 right-4 text-purple-300 hover:text-white text-lg p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-4">
+                <div class="w-12 h-12 bg-[#53329c]/50 text-purple-200 rounded-full flex items-center justify-center mx-auto mb-2 text-xl border border-purple-400/40">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Atendemos Varejo & Consumidor Final!</h3>
+                <p class="text-xs text-purple-200/75">Temos um e-commerce oficial e grupo de ofertas avulsas para você.</p>
+            </div>
+
+            <p class="text-xs text-purple-100 bg-[#231347] p-3 rounded-lg border border-[#53329c]/60 mb-5 leading-relaxed">
+                Você pode entrar no grupo de ofertas para compras individuais ou acessar diretamente nossa loja de varejo sem pedido mínimo.
+            </p>
+
+            <div class="space-y-2.5">
+                <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" onclick="trackConversion('CTA_Modal_Consumidor_Grupo')" class="w-full bg-gradient-to-r from-[#84cc16] to-[#a3e635] hover:from-[#a3e635] hover:to-[#bef264] text-[#120929] font-black text-sm py-3.5 px-4 rounded-xl shadow-lg glow-effect flex items-center justify-center gap-2 text-center uppercase tracking-wider">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Entrar no Grupo de Ofertas</span>
+                </a>
+                <a href="https://sualoja.com.br" target="_blank" onclick="trackConversion('CTA_Modal_Consumidor_Loja')" class="w-full bg-[#231347] hover:bg-[#53329c] text-white font-bold text-xs py-3 px-4 rounded-xl border border-[#53329c] flex items-center justify-center gap-2 text-center transition-colors">
+                    <i class="fa-solid fa-cart-shopping text-[#a3e635]"></i>
+                    <span>Comprar na Loja de Varejo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTION AND PIXEL EVENTS -->
+    <script>
+        // CAROUSEL LOGIC
+        let currentSlide = 0;
+        const totalSlides = 4;
+        let slideInterval;
+
+        function updateCarousel() {
+            const track = document.getElementById('carousel-track');
+            const dots = document.querySelectorAll('.carousel-dot');
+            if (!track) return;
+
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('bg-white/40', 'w-2.5');
+                    dot.classList.add('bg-[#a3e635]', 'w-6');
+                } else {
+                    dot.classList.remove('bg-[#a3e635]', 'w-6');
+                    dot.classList.add('bg-white/40', 'w-2.5');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+            restartCarouselAutoPlay();
+        }
+
+        function startCarouselAutoPlay() {
+            slideInterval = setInterval(nextSlide, 4500);
+        }
+
+        function restartCarouselAutoPlay() {
+            clearInterval(slideInterval);
+            startCarouselAutoPlay();
+        }
+
+        // Initialize Carousel on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateCarousel();
+            startCarouselAutoPlay();
+
+            // Pause on hover
+            const carouselContainer = document.getElementById('hero-carousel');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                carouselContainer.addEventListener('mouseleave', () => startCarouselAutoPlay());
+
+                // Touch support for swipe left/right on mobile
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                carouselContainer.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, { passive: true });
+
+                carouselContainer.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    if (touchStartX - touchEndX > 40) {
+                        nextSlide();
+                        restartCarouselAutoPlay();
+                    } else if (touchEndX - touchStartX > 40) {
+                        prevSlide();
+                        restartCarouselAutoPlay();
+                    }
+                }, { passive: true });
+            }
+        });
+
+        // Track Segmentation Choice and Open Modal
+        function selectProfile(profile) {
+            const btnLojista = document.getElementById('btn-lojista');
+            const btnConsumidor = document.getElementById('btn-consumidor');
+
+            if (profile === 'lojista') {
+                btnLojista.classList.add('border-[#a3e635]', 'bg-[#321d69]');
+                btnConsumidor.classList.remove('border-purple-300', 'bg-[#321d69]');
+                openModal('atacado-modal');
+            } else {
+                btnConsumidor.classList.add('border-purple-300', 'bg-[#321d69]');
+                btnLojista.classList.remove('border-[#a3e635]', 'bg-[#321d69]');
+                openModal('varejo-modal');
+            }
+
+            // Meta Pixel Custom Event
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'SelectedProfile', { profile: profile });
+            }
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+
+        // Meta Pixel Conversion Event Trigger
+        function trackConversion(label) {
+            console.log('Conversion tracked:', label);
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', { content_name: label });
+            }
+        }
+
+        // Close modal when clicking outside box
+        window.onclick = function(event) {
+            const atacadoModal = document.getElementById('atacado-modal');
+            const varejoModal = document.getElementById('varejo-modal');
+            if (event.target === atacadoModal) {
+                closeModal('atacado-modal');
+            }
+            if (event.target === varejoModal) {
+                closeModal('varejo-modal');
+            }
+        }
+    </script>
+</body>
+</html>
